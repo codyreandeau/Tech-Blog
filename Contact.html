@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tech Blog-Contact</title>
+	<link type="text/css" rel="stylesheet" href="TechBlog.css">
+	<!--Import google fonts-->
+	<link href='https://fonts.googleapis.com/css?family=RaleWay' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="blog.js"></script>
+	<meta charset="utf-8">
+</head>
+<!--Display date and time on page and display message when page loads.-->
+<body onload="date();contact()">
+<header>Tech BlogSpot</header>
+<!--Matrix image-->
+<div class="matrix_image">
+	<img src="matrix.jpg" alt="matrix" onmouseout="original()" onmouseover="newImage()" id="image"/><!--https://pixabay.com/en/abstract-lines-numbering-system-1231863/-->
+</div>
+<!--Navigation-->
+<div class="navcontainer">
+			<div class="nav" style="border-left:solid #80ccff 3px"><a href="http://www.albany.edu/~CR999437/TechBlog.html">Home</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Tips.html">Tips</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Languages.html">Languages</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Contact.html">Contact Me</a></div>
+</div>
+
+<!--Banner that tells you what page you're on-->
+<img src="Contact.png" alt="Contact">
+
+<!--Content-->
+<div class="content"> 
+<!--Self Portrait-->
+		<img src="myface.jpg" alt="Cody">
+		<p id="time"></p>
+		<article>
+		<p>Hello, Everyone! First and foremost I would like to thank you for visiting my
+		blog. If you would like you can follow me on Twitter and check out my Linkedin account.</p>
+		<dl>
+			<dt>Social Media Links</dt>
+				<dd><a href="https://twitter.com/yesoksometimes">Twitter</a></dd>
+				<dd><a href="https://www.linkedin.com/in/cody-reandeau-831038115?authType=NAME_SEARCH&authToken=H8tJ&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CentityType%3AentityHistoryName%2CclickedEntityId%3Amynetwork_480820645%2Cidx%3A0">LinkedIn</a></dd>
+		</dl>
+<!--Allow user to rate the site-->
+		<p>What would you rate this blog out of ten.</p>
+		<input type="text" size="2" id="in" class="textbox"/>
+			<button onclick="rating()">Enter</button>
+			<div>
+			<p id="user"></p>
+			</div>
+		</article>
+</div>
+<div class="content">
+<article>
+<p>About Me:</p>
+        <p>My name is Cody Reandeau and I am a Junior at the University of Albany
+		studying Computer Science. If you have any questions, comments, or concerns, you can contact 
+		me by email at <a href="mailto:codyreandeau@yahoo.com">codyreandeau@yahoo.com</a></p>
+<!--Allow user to see my areas of interests-->
+<p>Click here to see some of my personal interests</p>
+    <div id="interest">
+	<button onclick="interests()">Show Interests</button>
+</div>
+</article>
+</div>
+<!--Button that closes the browser window-->
+<div id="close">
+<button onclick="refresh()">Refresh Page</button>
+</div>
+</body>
+</html>

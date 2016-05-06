@@ -1,0 +1,285 @@
+body {
+	background-color:#f5f5f0;
+	overflow-x: hidden;
+}
+
+img {
+	position:relative;
+	margin-top:30px;
+	margin-bottom:20px;
+	left:-10px;
+	border-top: solid black 2px;
+	border-bottom: solid black 2px;
+	border-right: solid black 2px;
+}
+
+h4 {
+	font-size:18px;
+}
+
+header {
+	text-align:center;
+	font-size:100px;
+	font-family:'Raleway';
+	font-weight:bold;
+}
+
+article {
+	margin-top:10px;
+	font-size:24px;
+	margin:5px;
+	font-family:'Droid Sans';
+	text-indent:50px;
+}
+
+table, th, tr, td {
+	font-size:20px;
+	font-family:'Droid Sans';
+	margin: 20px;
+	border: solid green 2px;
+}
+
+table {
+	float:left;
+}
+
+iframe {
+	height:300px;
+	width:55%;
+	margin:20px;
+	border:solid #80ccff 4px;
+	float:left;
+}
+
+dd a {
+	text-decoration:none;
+}
+
+video {
+	float:left;
+	width:60%;
+	height:70%;
+	margin:15px;
+	border:solid #80ccff 4px;
+	background-color:black;
+}
+
+object {
+	width:60%;
+	height:70%;
+	float:left;
+	margin:20px;
+	border:solid #80ccff 4px;
+}
+
+button {
+	border:solid #80ccff 2px;
+	height:40px;
+	width:120px;
+	font-weight:bold;
+	font-size:16px;
+}
+
+input {
+	height:30px;
+	width:100px;
+}
+
+.center {
+	width:500px;
+	height:125px;
+	margin: 0 auto;
+}
+
+.centertext {
+	text-align:center;
+	margin:10px;
+	margin-top:60px;
+	font-size:30px;
+	text-indent:0;
+}
+
+/*classes*/
+
+.navcontainer {
+	width:60%;
+	height:50px;
+	padding:15px;
+	margin:auto;
+}
+
+.nav {
+	float:left;
+	width:22%;
+	height:50px;
+	text-align:center;
+	list-style:none;
+	border-right:solid #80ccff 3px;
+	line-height:45px;
+}
+
+.content {
+	width:70%;
+	height:500px;
+	margin:auto;
+	border:solid black 2px;
+	margin-bottom:10px;
+	background-color:#e6f5ff;
+	overflow-y:auto;
+}
+
+.styling{
+	background-color:black;
+	color:lime;
+	font: bold 18px MS Sans Serif;
+	padding: 3px;
+}
+
+.content img {
+	margin-left:20px;
+	margin-top:15px;
+	width:375px;
+	height:450px;
+	border:solid #80ccff 4px;
+	float:left;
+}
+
+.float {
+	position:absolute;
+	top:285px;
+	right:250px;
+}
+
+.matrix_image {
+	position:absolute;
+	right:10px;
+	top:10px;
+	right:0;
+}
+
+.matrix_image img {
+	height:220px;
+	width:300px;
+	border:solid #80ccff 4px;
+	float:right;
+}
+
+.nav a{
+	font-family:'Droid Sans';
+	font-size:25px;
+	font-weight:bold;
+	text-decoration:none;
+	color:black;
+}
+
+.textbox {
+	margin-left:150px;
+}
+
+.margin {
+	margin-bottom:0;
+}
+
+#close:hover {
+	color: #ea153f;
+}
+
+.contact-menu {
+  background-color:#6666ff; 
+  height: 90px;
+  position: absolute;
+  width: 600px;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  top:1200px;
+  right:0;
+  padding-top:10px;
+  z-index: 100;
+}
+
+.contact-icon-close {
+	cursor: pointer;
+	width: 12px;
+	margin: 5px;
+	float:left;
+	margin-top:-12px;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.icon-menu-contact {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-family: 'Amatic SC';
+  font-size: 3vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  width:330px;
+  margin: 0;
+  padding: 0;
+  right:100px;
+  margin-top:40px;
+}
+
+.contact-menu p {
+	position: relative;
+	font-family: 'Amatic SC';
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+	text-align:center;
+	bottom:9px;
+	padding:1px;
+	background-color:#99ff99;
+}
+
+/*ID's*/
+
+#close {
+	margin:auto;
+    text-align:center;
+}
+
+#time {
+	font-size: 18px;
+	font-weight:bold;
+}
+
+#user {
+	font-size:14px;
+}
+
+#picture {
+	visibility:hidden;
+}
+
+/*pseudo classes*/
+
+.nav a:hover {
+	color:#00e600;
+}
+
+.nav a:active {
+	color:blue;
+}
+
+dd a:hover {
+	color:green;
+}
+
+dd a:active {
+	color:blue;
+}
+
+/*media querie that makes image disapear when the browser width decreases*/
+
+@media (max-width: 1300px) {
+.matrix_image img{
+	visibility:hidden;
+	}
+}

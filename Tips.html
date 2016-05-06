@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tech Blog-Tips</title>
+	<link type="text/css" rel="stylesheet" href="TechBlog.css">
+	<!--Import google fonts-->
+	<link href='https://fonts.googleapis.com/css?family=RaleWay' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="blog.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+<header>Tech BlogSpot</header>
+<!--Allow user to show matrix image-->
+<button onclick="hide()" class="float">Show Image</button>
+<div class="matrix_image">
+	<img src="matrix.jpg" alt="matrix" onmouseout="original()" onmouseover="newImage()" id="image"/><!--https://pixabay.com/en/abstract-lines-numbering-system-1231863/-->
+</div>
+<!--Navigation-->
+	<div class="navcontainer">
+			<div class="nav" style="border-left:solid #80ccff 3px"><a href="http://www.albany.edu/~CR999437/TechBlog.html">Home</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Tips.html">Tips</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Languages.html">Languages</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Contact.html">Contact Me</a></div>
+</div>
+<!--Banner that tells you what page you're on-->
+<img src="Tips.png" alt="Tips">
+
+<!--Content-->
+<div class="content">
+<object data="MyFirstWebsite.mp4" style="float:right; width:70%; height:80%"></object><!--Recorded myself-->
+	<p>
+		<article style="margin-left:15px">
+			<p>This is my first website. I created this by going through the HTML and CSS course, 
+			as well as the JavaScript course. If you don't know where to start with web development,
+			I highly suggest going through some of codecademy's free tutorials.</p>
+<!--Button to open my bands page in a new tab-->				
+			<button onclick="url()">Visit Page!</button>
+			<p id="music"></p>
+		</article>
+</div>
+<div class="content">
+	<object data="HelloWorld.pdf"></object><!--Created by me-->
+	<article style="font-size:18px">
+		<h3>Building your first Java Program!</h3>
+			<p>This is a tutorial for complete novices. What we're going to do is build a simple program
+			that prints out, "Hello World."</p>
+			<ol>
+				<li>First we need to create our hello world class by writing "public class HelloWorld {" at
+				the top of the page</li>
+				<li>Then, we must write "public static void main(String[] args) {" to declare our main method.</li>
+				<li>Within our main method we're going to have to put "System.out.println("Hello World!");" This statement
+				will print out "Hello World!"</li>
+				<li>Fianlly, put two curly brackets('}') at the end of the program to signify the end of the main method
+				and the end of the class</li>
+			</ol>
+		</article>
+</div>
+<!--Digital clock-->
+<span id="digitalclock" class="styling"></span>
+</body>
+</html>

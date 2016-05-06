@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tech Blog-Home</title>
+	<link type="text/css" rel="stylesheet" href="TechBlog.css">
+	<!--Import google fonts-->
+	<link href='https://fonts.googleapis.com/css?family=RaleWay' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="blog.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+<header>Tech BlogSpot</header>
+<!--Matrix Image-->
+<div class="matrix_image">
+	<img src="matrix.jpg" alt="matrix" onmouseout="original()" onmouseover="newImage()" id="image"/><!--https://pixabay.com/en/abstract-lines-numbering-system-1231863/-->
+</div>
+<!--Navigation-->
+<div class="navcontainer">
+			<div class="nav" style="border-left:solid #80ccff 3px"><a href="http://www.albany.edu/~CR999437/TechBlog.html">Home</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Tips.html">Tips</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Languages.html">Languages</a></div>
+			<div class="nav"><a href="http://www.albany.edu/~CR999437/Contact.html">Contact Me</a></div>
+</div>
+
+<!--Banner that tells you what page you're on-->
+<img src="LatestNews.png" alt="Latest News">
+
+<!--Content-->
+<div class="content"> 
+		<img src="code.jpg" class="margin" alt="code" style="float:right"/>
+		<article style="font-size:20px">
+			<p><strong>Front-End web development</strong> is all about the aesthetics and
+			interactivity of the website. What is important to learn for
+			someone who is looking to get into design/development is first
+			and foremost: HTML. A web developer of any kind should have
+			a good understanding of some version of HTML, weather it be
+			HTML5 or XHTML. HTML allows you to add links, images, paragraphs,
+			and more to your page. Then, you must understand CSS, which stands
+			for Cascading Style Sheet. CSS will allow you to apply style(s) 
+			to your web page; in other words, CSS allows you to make your
+			page look asthetically pleasing. Then, one must learn Javascript.
+			Javascript is the backbone of the internet. It allows your page
+			to be functional and interactive. So to recap, for front-end web
+			development you should learn:</p>
+<!--Display list of front end languages-->			
+	<div id="list">
+		<button onclick="languages()">Show List</button>
+	</div>
+<!--Give user suggestions on what back end languages they could learn-->	
+			<h4>Would you like to learn about server-side scripting?</h4>
+				<p id="user">Write either "yes" or "no" in the box below</p>
+				<input type="text" size="10" id="in" class="textbox"/>
+			<button onclick="serverside()">Enter</button>
+		</article>
+</div>
+<div class="content">
+<video controls autoplay><!--Recorded myself-->
+	<source src="OneRepMaxProgram.mp4" type="video/mp4">
+</video>
+		<article>
+			<p>This is a program I built when I first got into Java. I created a program
+			that allows athletes/weightlifters to calculate their one rep max based off
+			of a rep max(example: 300lbs x 4 reps = 327lb one rep max). Within this program,
+			I was practicing using JOptionPane to display message/input boxes, and was 
+			also practicing how to read keyboard input using a scanner object. View in
+			"full screen" for better quality.</p>
+		</article>
+</div>
+<div class="content">
+<!--Google widget API-->
+<a class="twitter-timeline" href="https://twitter.com/google" data-widget-id="726518938880905216">Tweets by @google</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<article>
+			<p>Check out Google's latest Twitter Feed! Now that companies have been releasing
+			their API's to the public, anybody can add them to their web pages or computer
+			programs!</p>
+		</article>
+</div>
+<!--Digital clock-->
+<span id="digitalclock" class="styling"></span>
+</body>
+</html>
