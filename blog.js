@@ -15,10 +15,10 @@ iterator++;
 
 //change image function
 function original(){
- document.getElementById("image").src="matrix.jpg";
+ document.getElementById("image").src="img/matrix.jpg";
 }
 function newImage(){
- document.getElementById("image").src="matrix2.jpg"; //https://pixabay.com/en/matrix-code-computer-pc-data-356024/
+ document.getElementById("image").src="img/matrix2.jpg"; //https://pixabay.com/en/matrix-code-computer-pc-data-356024/
 }
 
 //function that uses a for loop to display my areas of interest
@@ -81,6 +81,7 @@ function rating() {
  document.getElementById("user").innerHTML = output;
  }
  
+//function that hides a pitcure
 function hide() {
 	if(document.getElementById("picture").style.visibility !== "visible"){
     document.getElementById("picture").style.visibility = "visible";
